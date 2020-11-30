@@ -1,5 +1,5 @@
-# mfruiz
-[dillinger]
+# H-Encore MAC EASY INSTALLER (3.65)
+
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/mfruizs/mac_psvita_hack365)
 
@@ -7,149 +7,52 @@ This project could be created from the data provided by the Reddit user [UnrealS
 
 # New Features!
 
-  - Automatic download ps vita demo pkg from here [Bitter Smile] ( if not exist )
-  - From QCMA path, list PSN ID
+  - Automatic download ps vita demo pkg from here [Bitter Smile] ( if not exist on your root package )
+  - From QCMA intetalled path, list PSN ID
   - From PSN ID, autogenerate encrypted key on [Henkaku] web
-  - Auto install all package
+  - Easy autoinstall all package with menu
+
+## Installation
+
+#### Script requires to run:
+  - PsVita on 3.65 version ( only allowed )
+  - [QCMA] Application installed 
+
+#### Script dev dependencies ( [brew] ):
+
+  - curl 
+    ```sh
+    $ brew install curl
+    ```
+  - wget
+    ```sh
+    $ brew install wget
+    ```
+#### Steps to follow
+
+  1. Install QCMA
+  2. Install commnad line library ( curl & wget ) [ if needed ]
+  3. Connect psvita on PC with QCMA, leave this in the background 
+  
+        > this generate a PSN ID on /APP when f we are registered and logged in psn store
+  4. Run the executable, when complete QCMA will notify you that the database refreshed and there should be a new addition
 
 
-You can also need installed:
-  - PsVita version 3.65 ( only allowed )
-  - Application installed [QCMA]
-  - 
+# DISCLAIMER
 
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
+Use this script/package at your own risk. 
+I do not take responsibility for any problems that may occur 
+(I have tried it on my own console and have had no problems)
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
+This is not affiliated to any company, it is only for study purposes to see how it works and to improve my development skills
 
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
-### Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-* [AngularJS] - HTML enhanced for web apps!
-* [Ace Editor] - awesome web-based text editor
-* [markdown-it] - Markdown parser done right. Fast and easy to extend.
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
-* [Gulp] - the streaming build system
-* [Breakdance](https://breakdance.github.io/breakdance/) - HTML to Markdown converter
-* [jQuery] - duh
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-### Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
-### Plugins
-
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-
-### Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Second Tab:
-```sh
-$ gulp watch
-```
-
-(optional) Third:
-```sh
-$ karma test
-```
-#### Building for source
-For production release:
-```sh
-$ gulp build --prod
-```
-Generating pre-built zip archives for distribution:
-```sh
-$ gulp build dist --prod
-```
-### Docker
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
-
-```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version} .
-```
-This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out `${package.json.version}` with the actual version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:${package.json.version}
-```
-
-Verify the deployment by navigating to your server address in your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-#### Kubernetes + Google Cloud
-
-See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
-
-
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
 
 License
 ----
 
-MIT
+GNU General Public License [v3.0]
 
+###### MD Template from [dillinger]
 
 **Free Software, Hell Yeah!**
 
@@ -161,3 +64,5 @@ MIT
    [bitter smile]: <http://ares.dl.playstation.net/cdn/JP0741/PCSG90096_00/xGMrXOkORxWRyqzLMihZPqsXAbAXLzvAdJFqtPJLAZTgOcqJobxQAhLNbgiFydVlcmVOrpZKklOYxizQCRpiLfjeROuWivGXfwgkq.pkg>
    [qcma]: <https://codestation.github.io/qcma/>
    [dillinger]: <https://dillinger.io/>
+   [brew]: <https://brew.sh/>
+   [v3.0]: <https://www.gnu.org/licenses/gpl-3.0.html>
