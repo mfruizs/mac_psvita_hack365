@@ -59,7 +59,7 @@ GNU General Public License [v3.0]
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
     
    [unrealswat]: <https://www.reddit.com/user/UnrealSWAT>
-   [reddit]: <https://www.reddit.com/r/vitahacks/comments/8vlrdt/hencore_mac_easy_installer>
+   [reddit]: <https://www.reddit.com/r/vitahacks/comments/8vbfv8/easyeasier_installation_of_hencore/>
    [henkaku]: <http://cma.henkaku.xyz/?aid=>
    [bitter smile]: <http://ares.dl.playstation.net/cdn/JP0741/PCSG90096_00/xGMrXOkORxWRyqzLMihZPqsXAbAXLzvAdJFqtPJLAZTgOcqJobxQAhLNbgiFydVlcmVOrpZKklOYxizQCRpiLfjeROuWivGXfwgkq.pkg>
    [qcma]: <https://codestation.github.io/qcma/>
