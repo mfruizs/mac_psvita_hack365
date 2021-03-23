@@ -35,7 +35,7 @@ This project could be created from the data provided by the Reddit user [UnrealS
   3. Connect psvita on PC with QCMA, leave this in the background 
   
         > this generate a PSN ID on /APP when f we are registered and logged in psn store
-  4. Run the executable, when complete QCMA will notify you that the database refreshed and there should be a new addition
+  4. Run the executable ( auto_h-encore.command ), when complete QCMA will notify you that the database refreshed and there should be a new addition
 
 
 # DISCLAIMER
